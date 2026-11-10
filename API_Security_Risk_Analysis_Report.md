@@ -242,16 +242,18 @@ No confirmed production security vulnerabilities were identified during this pre
 
 10. SECURITY RECOMMENDATIONS
 
-1. Enforce authentication on protected API endpoints.
-2. Implement authorization checks for every protected resource.
-3. Validate and sanitize user-supplied input.
-4. Apply context-appropriate output encoding.
-5. Implement rate limiting and request monitoring.
-6. Avoid exposing sensitive information in API responses.
-7. Use HTTPS for API communication.
-8. Protect authentication tokens and credentials.
-9. Maintain structured API logs and monitor suspicious activity.
-10. Perform further security testing in an authorized environment.
+The following security improvements are recommended:
+
+- Enforce authentication on protected API endpoints.
+- Implement authorization checks for every protected resource.
+- Validate and sanitize user-supplied input.
+- Apply context-appropriate output encoding.
+- Implement rate limiting and request monitoring.
+- Avoid exposing sensitive information in API responses.
+- Use HTTPS for API communication.
+- Protect authentication tokens and credentials.
+- Maintain structured API logs and monitor suspicious activity.
+- Perform further security testing in an authorized environment.
 
 11. LIMITATIONS
 
@@ -275,4 +277,5 @@ Further testing against an authorized application with defined security requirem
 ---
 
 Prepared for: Future Interns Cyber Security Internship
+
 Task: Task 3 – API Security Risk Analysis
