@@ -2,17 +2,18 @@ API Security Risk Analysis Report
 
 Future Interns – Cyber Security Internship | Task 3
 
-Project: API Security Risk Analysis
-Testing Tool: Postman
-Target: Postman Echo (Public Demonstration API)
-Assessment Type: Preliminary API Security Assessment
-Date: November 2026
+Project Detail| Information
+Project| API Security Risk Analysis
+Testing Tool| Postman
+Target| Postman Echo Public Demonstration API
+Assessment Type| Preliminary API Security Assessment
+Assessment Date| November 2026
 
 ---
 
 1. Executive Summary
 
-This assessment examined API endpoints, HTTP methods, authentication mechanisms, query parameters, custom headers, rate-limiting behaviour, and input handling using Postman Echo.
+This assessment examined API endpoints, HTTP methods, authentication mechanisms, query parameters, custom headers, rate-limiting behaviour and input handling using Postman.
 
 The tests demonstrated successful endpoint communication and authentication responses. Input reflection was also observed.
 
@@ -20,7 +21,7 @@ No production API vulnerabilities were confirmed during this assessment. Since P
 
 2. Scope and Methodology
 
-Scope
+2.1 Scope
 
 The assessment covered:
 
@@ -32,12 +33,12 @@ The assessment covered:
 - Rate-limiting behaviour
 - Input validation and input reflection
 
-Tools
+2.2 Tools Used
 
 - Postman
 - Postman Echo public demonstration API
 
-Methodology
+2.3 Methodology
 
 Requests were sent through Postman. HTTP response codes, response bodies, authentication results and reflected request data were examined.
 
@@ -53,7 +54,7 @@ DELETE| "/delete"| 200 OK
 
 Observation: All four HTTP methods returned successful responses during testing.
 
-Security note: Successful responses confirm endpoint functionality, not the absence of security weaknesses.
+Security Note: Successful responses confirm endpoint functionality, not the absence of security weaknesses.
 
 4. Query Parameter Analysis
 
@@ -70,7 +71,7 @@ Assessment: Parameter handling was demonstrated. No confirmed injection vulnerab
 
 5. Custom Header Analysis
 
-Header tested: "X-Custom-Header: FutureInterns"
+Header Tested: "X-Custom-Header: FutureInterns"
 
 Observed Result: The custom header was reflected in the response.
 
@@ -99,7 +100,7 @@ Observed Result: HTTP 200 OK and ""authenticated": true".
 
 Assessment: Both authentication demonstrations returned successful responses.
 
-Limitation: These tests did not establish whether a production API properly enforces permissions, role-based access control, or resource-level authorization.
+Limitation: These tests did not establish whether a production API properly enforces permissions, role-based access control or resource-level authorization.
 
 7. Rate-Limiting Analysis
 
@@ -121,7 +122,7 @@ Observed Result: The API returned HTTP 200 OK and reflected the submitted input 
 
 Assessment: Input reflection was observed. This alone does not establish cross-site scripting (XSS), since browser execution and the relevant output context were not tested.
 
-Recommendation:
+Recommendations:
 
 - Validate input against expected formats.
 - Apply context-appropriate output encoding.
@@ -134,8 +135,8 @@ Area| Finding| Assessment
 HTTP methods| All four methods returned 200 OK| No confirmed vulnerability
 Query parameters| Values reflected| No confirmed vulnerability
 Custom headers| Header reflected| No confirmed vulnerability
-Basic authentication| Authentication response successful| Limited demonstration
-Bearer authentication| Authentication response successful| Limited demonstration
+Basic Authentication| Authentication response successful| Limited demonstration
+Bearer Authentication| Authentication response successful| Limited demonstration
 Rate limiting| No 429 observed in limited testing| Inconclusive
 Input validation| Script-like input reflected| Requires further testing
 Authorization| Resource-level access control not tested| Assessment gap
@@ -166,7 +167,7 @@ No confirmed production security vulnerabilities were identified.
 
 12. Conclusion
 
-The assessment demonstrated API communication, HTTP method handling, parameter reflection, custom header handling and basic authentication mechanisms using Postman.
+The assessment demonstrated API communication, HTTP method handling, parameter reflection, custom header handling and authentication mechanisms using Postman.
 
 The tests also identified areas requiring deeper assessment, particularly rate limiting, input validation and authorization.
 
